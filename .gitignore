@@ -1,0 +1,7 @@
+*.log
+
+# currently not need
+yarn
+gatsby
+jgit
+tmux

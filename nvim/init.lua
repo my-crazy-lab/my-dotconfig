@@ -6,6 +6,7 @@ vim.opt.fileencoding = 'utf-8'
 
 vim.wo.number = true
 vim.o.clipboard = "unnamedplus"
+vim.opt.relativenumber = true
 
 vim.opt.title = true
 vim.opt.autoindent = true
@@ -111,6 +112,8 @@ packer.startup(function(use)
       ts_update()
     end,
   }
+
+  use 'nvim-tree/nvim-tree.lua'
 end)
 
 -- TEST
