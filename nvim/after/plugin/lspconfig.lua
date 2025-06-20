@@ -42,7 +42,7 @@ protocol.CompletionItemKind = {
   '', -- Field
   '', -- Variable
   '', -- Class
-  'ﰮ', -- Interface
+  '.CreateInstance', -- Interface
   '', -- Module
   '', -- Property
   '', -- Unit

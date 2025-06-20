@@ -1,0 +1,7 @@
+-- Tắt hoàn toàn noice.nvim
+-- local status_noice, noice = pcall(require, "noice")
+-- if (not status_noice) then return end
+-- 
+-- noice.setup({
+--   enabled = false,
+-- })

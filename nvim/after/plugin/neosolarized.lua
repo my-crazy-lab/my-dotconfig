@@ -20,10 +20,11 @@ Group.new('CursorLineNr', colors.yellow, colors.black, styles.NONE, colors.base1
 Group.new('Visual', colors.none, colors.base03, styles.reverse)
 Group.new('NormalFloat', colors.base1, colors.NONE, styles.NONE)
 
-local cError = groups.Error.fg
-local cInfo = groups.Information.fg
-local cWarn = groups.Warning.fg
-local cHint = groups.Hint.fg
+-- Define diagnostic colors with fallbacks
+local cError = groups.Error and groups.Error.fg or colors.red
+local cInfo = groups.Information and groups.Information.fg or colors.blue
+local cWarn = groups.Warning and groups.Warning.fg or colors.orange
+local cHint = groups.Hint and groups.Hint.fg or colors.yellow
 
 Group.new("DiagnosticVirtualTextError", cError, cError:dark():dark():dark():dark(), styles.NONE)
 Group.new("DiagnosticVirtualTextInfo", cInfo, cInfo:dark():dark():dark(), styles.NONE)
